@@ -1,15 +1,4 @@
-name: CI
-on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    
 name: Build & Push Image
-
 on:
   push:
     branches: [master]
