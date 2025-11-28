@@ -13,7 +13,8 @@ Base.metadata.create_all(bind=engine)
 
 @app.get("/health")
 def health():
-return {"status": "ok"}
+    return {"status": "ok"}
+
 @app.get("/api/greet/{name}")
 def greet(name: str):
-return {"message": f"Hello, {name} from Service A!"}
+    return {"message": f"Hello, {name} from Service A!"}
